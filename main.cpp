@@ -1,5 +1,5 @@
 // quick implementation of rolling cylinder on slopped "plane"
-// Nadir Syed
+// Nadir Syed 25/02/2021
 
 #include <iostream>
 #include <algorithm>
@@ -23,7 +23,7 @@ struct Clock
     }
 };
 
-const float initial_x = 700;
+const float initial_x = 700; // 1 pixel = 1 meter.
 const float initial_y = 100;
 
 struct Cylinder
@@ -36,7 +36,7 @@ struct Cylinder
     float real_y = initial_y;
 };
 
-const float g = 9.81f; // too fast?
+const float g = 9.81f; 
 const float cos_sin45 = 0.70710678118f;
 
 SDL_Surface* surface; 
